@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from heydealer.utils.parsing import main
+from heydealer.views import start_parsing
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('start-parsing/', main, name='start-parsing')
+    path('start-parsing/', start_parsing, name='start-parsing')
 ]
